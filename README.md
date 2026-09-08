@@ -8,35 +8,39 @@ StayOS is currently in the frontend foundation stage. The Angular workspace and 
 
 The current work is static and does not yet include APIs, authentication, database integration or live booking functionality.
 
-## Planned Product Screens
+## Planned Onboarding Flow
 
-### Public and Account
+1. Signup
+2. Web address
+3. Property details
+4. Room types
+5. Photos
+6. Rates
+7. Website template
+8. Connect Google listing
+9. Confirmation / go live
 
-1. Landing Page
-2. Sign Up
-3. Sign In
+## Future Plans
 
-### Hotel Onboarding
+**Phase 1 — Onboarding UI (current)**
+Build all onboarding screens as static, standalone Angular components matching the approved wireframes. No backend calls yet.
 
-4. Web Address
-5. Property Details
-6. Room Types
-7. Photos
-8. Rates
-9. Website
-10. Connect Google
-11. You Are Live
+**Phase 2 — Data layer**
+Design and set up the core database schema (tenants, properties, room types, rooms, rates, guests, reservations, reviews). Connect the onboarding screens to real APIs so data entered in the wizard is actually saved.
 
-### Hotel Operations
+**Phase 3 — Authentication**
+Add signup/login, session handling, and multi-tenant access control so each hotel only sees its own data.
 
-12. Morning Queue
-13. Front Desk
-14. Review Inbox
-15. Review Reply
-16. Check In
-17. Guest Profile
-18. Reports
+**Phase 4 — Core operations**
+Build the day-to-day screens: front desk (room chart, check-in/check-out), review inbox, guest profiles, and reports.
 
+**Phase 5 — Booking engine**
+Enable live availability, rates, and payments so guests can book directly through the hotel's own website.
+
+**Phase 6 — Public launch prep**
+Polish, testing, deployment pipeline, and onboarding real hotels.
+
+Each phase builds on the previous one — later phases will only start once the current phase is stable.
 
 ## Technology
 
